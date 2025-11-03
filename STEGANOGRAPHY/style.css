@@ -39,6 +39,7 @@ html,body{
 
 /* Titres */
 h1,h2,h3{
+   color:blue;
   margin:0 0 12px 0;
   font-weight:600;
   letter-spacing: -0.015em;
