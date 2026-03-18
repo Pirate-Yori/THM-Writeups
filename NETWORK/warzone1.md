@@ -6,33 +6,34 @@ Ici c'est un exerice de forensic. les outils que je vais utiliser NetworkMiner e
 
 ### 1-What was the alert signature for Malware Command and Control Activity Detected?
 
+``` ET Malware MirrorBlast CnC Activity M3```
+
 Utilisons Brim pour cela, Brim est un outil d'analyse de paquet tres puissant nous permettant de trouver vite des informations subtentiels.
-
-response : ET Malware MirrorBlast CnC Activity M3
-
 
 ![1](https://github.com/user-attachments/assets/08b43f02-3920-45d3-8857-34e3e1ccb67b)
 
 ### 2-What is the source IP address? Enter your answer in a defanged format. 
 
+```172[.]16[.]1[.]102```
+
 Ici j'utilise le filtre du nom de la signature et apres avoir pris l'ip source j'utilise le mode defanged ip sur cyberchef, ce qui donne.
 
 <img width="852" height="500" alt="image" src="https://github.com/user-attachments/assets/7d92ef63-a352-48b4-92cb-22ef2e91f17b" />
 
-Response: 172[.]16[.]1[.]102
 
 ### 3-What IP address was the destination IP in the alert? Enter your answer in a defanged format. 
 
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/7d92ef63-a352-48b4-92cb-22ef2e91f17b" />
+<img width="852" height="500" alt="image" src="https://github.com/user-attachments/assets/7d92ef63-a352-48b4-92cb-22ef2e91f17b" />
 
 Idem ici
-Response : 169[.]239[.]128[.]11
+
+```169[.]239[.]128[.]11```
 
 ### 4-Still in VirusTotal, under Community, what threat group is attributed to this IP address?
 
 On prend l'adresse ip de destination , l'adresse des hackeurs et on le met dans virustotal
 
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/1cba8aa2-7814-4e44-a1e4-cb59f2d4a600" />
+<img width="852" height="500" alt="image" src="https://github.com/user-attachments/assets/1cba8aa2-7814-4e44-a1e4-cb59f2d4a600" />
 
 Response : TA505
 TA505, c’est un groupe cybercriminel qui spamme et infecte des systèmes pour gagner de l’argent, souvent via ransomware ou vol de données bancaires.
@@ -52,10 +53,16 @@ MirrorBlast = campagne de malware + phishing
 
 Dans VirusTotal regarde la partie RELATIONS>Communicated file.
 
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/93689b59-4091-4a24-b213-8144f5e7d541" />
+<img width="852" height="500" alt="image" src="https://github.com/user-attachments/assets/93689b59-4091-4a24-b213-8144f5e7d541" />
 
 
 ### 7-Inspect the web traffic for the flagged IP address; what is the user-agent in the traffic?
+
+```REBOL View 2.7.8.3.1```
+
+J'ouvre WireShark j'applique le filtre : ip.dst == 169.239.128.11 && http. Et apres Follow>HTTP Stream
+
+<img width="852" height="500" alt="image" src="https://github.com/user-attachments/assets/fc119946-770f-4394-b9b9-eb2d190b65a2" />
 
 
 ### 8-Retrace the attack; there were multiple IP addresses associated with this attack. What were two other IP addresses? Enter the IP addressed defanged and in numerical order. (format: IPADDR,IPADDR)
