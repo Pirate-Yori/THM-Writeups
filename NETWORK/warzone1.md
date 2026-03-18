@@ -67,6 +67,17 @@ J'ouvre WireShark j'applique le filtre : ip.dst == 169.239.128.11 && http. Et ap
 
 ### 8-Retrace the attack; there were multiple IP addresses associated with this attack. What were two other IP addresses? Enter the IP addressed defanged and in numerical order. (format: IPADDR,IPADDR)
 
+```185[.]10[.]68[.]235,192[.]36[.]27[.]92```
+
+Sur Brim j'applique ce filtre : _path=="http"
+
+<img width="754" height="500" alt="image" src="https://github.com/user-attachments/assets/2dd17257-a5db-4efb-9a91-2519824f6b3f" />
+
+En ayant appliquer ce filtre je vois que les autres ip associé a l'attaque sont 185.10.68.235 et 192.36.27.92.
+
+Et maintenant je pars sur cyberchef pour mettre en defanged.
+
+
 ### 9-What were the file names of the downloaded files? Enter the answer in the order to the IP addresses from the previous question. (format: file.xyz,file.xyz)
 
 
