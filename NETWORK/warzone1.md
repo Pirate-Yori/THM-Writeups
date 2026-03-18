@@ -17,13 +17,13 @@ response : ET Malware MirrorBlast CnC Activity M3
 
 Ici j'utilise le filtre du nom de la signature et apres avoir pris l'ip source j'utilise le mode defanged ip sur cyberchef, ce qui donne.
 
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/7d92ef63-a352-48b4-92cb-22ef2e91f17b" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/7d92ef63-a352-48b4-92cb-22ef2e91f17b" />
 
 Response: 172[.]16[.]1[.]102
 
 ### 3-What IP address was the destination IP in the alert? Enter your answer in a defanged format. 
 
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/7d92ef63-a352-48b4-92cb-22ef2e91f17b" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/7d92ef63-a352-48b4-92cb-22ef2e91f17b" />
 
 Idem ici
 Response : 169[.]239[.]128[.]11
